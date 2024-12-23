@@ -7,6 +7,7 @@
 1. 在一台有 ROOT 的 Android 设备上登录 Microsoft Authenticator 软件，并完成数据同步。
 2. 使用文件管理工具，访问 `/data/data/com.azure.authenticator/databases/PhoneFactor`。
 3. 将 `PhoneFactor`、`PhoneFactor-shm`、`PhoneFactor-wal`（如果存在后两个则复制）复制到 PC 上，放到脚本所在的目录下。
+4. （可能需要）在电脑上，使用 [SQLiteStudio](https://github.com/pawelsalawa/sqlitestudio) 或其他工具打开一次 `PhoneFactor` 数据库，以解决一些缓存和同步的问题。
 
 ### 环境配置
 
